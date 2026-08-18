@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Painel de Personalização</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="cartao">
+
+            <h1>🎨 Painel de Personalização</h1>
+
+            <p class="descricao">
+                Use os controles abaixo para personalizar a aparência da página.
+            </p>
+
+
+            <!-- TEMAS -->
+
+            <section class="secao">
+
+                <h2>🌙 Tema da página</h2>
+
+                <div class="botoes">
+
+                    <button
+                        type="button"
+                        class="btn-noturno"
+                        onclick="ativarNoturno()"
+                    >
+                        🌙 Modo Noturno
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn-diurno"
+                        onclick="ativarDiurno()"
+                    >
+                        ☀️ Modo Diurno
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- COR -->
+
+            <section class="secao">
+
+                <h2>🎨 Cor do texto</h2>
+
+                <p id="color">
+                    Este texto terá sua cor alterada.
+                </p>
+
+                <div class="botoes">
+
+                    <button
+                        type="button"
+                        onclick="mudarCor('purple')"
+                    >
+                        🟣 Roxo
+                    </button>
+
+                    <button
+                        type="button"
+                        onclick="mudarCor('blue')"
+                    >
+                        🔵 Azul
+                    </button>
+
+                    <button
+                        type="button"
+                        onclick="mudarCor('red')"
+                    >
+                        🔴 Vermelho
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- TAMANHO -->
+
+            <section class="secao">
+
+                <h2>🔠 Tamanho do texto</h2>
+
+                <p id="fonte">
+                    Este texto pode ficar maior ou menor.
+                </p>
+
+                <div class="botoes">
+
+                    <button
+                        type="button"
+                        onclick="aumentarFonte()"
+                    >
+                        A+
+                    </button>
+
+                    <button
+                        type="button"
+                        onclick="diminuirFonte()"
+                    >
+                        A-
+                    </button>
+
+                    <button
+                        type="button"
+                        onclick="tamanhoNormal()"
+                    >
+                        Normal
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- RESET -->
+
+            <button
+                type="button"
+                class="btn-reset"
+                onclick="restaurarPagina()"
+            >
+                🔄 Restaurar configurações
+            </button>
+
+        </div>
+
+    </main>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
